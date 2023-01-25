@@ -1,0 +1,103 @@
+*{
+    font-family: Roboto, Arial;
+}
+header{
+    padding: 10px 15px;
+    height: 10vh;
+    display: flex;
+    background-color: #6ab7ad;
+}
+
+body{
+    margin: 0;
+}
+
+h1{
+    flex: 1;
+    margin: 10px 0;
+    padding: 10px 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #FFFFFF;
+    align-self: center;
+}
+
+img{
+    width: 12vw;
+    max-width: 75px;
+    border: 5px inset #FFF; 
+    border-radius: 100%;
+    align-self: center;
+}
+
+a{
+    color: #D35400;
+    text-decoration: none;
+    transition: background-color 0.15s;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+.basic-info{
+    flex: 1;
+    margin: 0 40px;
+    display: flex;
+    flex-direction: column;
+    column-gap: 30px;
+}
+
+.contact-div{
+    background-color: bisque;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.contact-div > p{
+    padding: 10px 15px;
+    margin: 0;
+
+    transition: background-color 0.15s;
+}
+
+h2{
+    font-size: 20px;
+}
+
+section{
+    border: 1px solid #000000;
+    padding: 0 15px;
+    margin: 10px 0;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.spacing{
+    padding-left: 15px;
+}
+.effect-hover{
+    font-size: 20px;
+    margin: 0;
+    padding: 10px 0 5px;
+    background-image: linear-gradient(90deg,#000000,#8d91e3 75%,#000000);
+    background-position-x: left;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: black;
+
+    transition: background-position 2s, font-size 0.25s, padding 0.25s;
+}
+
+.effect-hover:hover{
+    font-size: 30px;
+    padding: 10px 0 0;
+    background-position-x: -80vw;
+    color: transparent;
+}
