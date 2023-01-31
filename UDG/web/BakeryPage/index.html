@@ -4,75 +4,27 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
-        <title>Tienda de pan</title>
+        <script defer src="app.js"></script>
+        <title>Bakery Shop</title>
     </head>
     <body>
         <header>
-            <h1>BAKERY SHOP</h1>
             <div class="redirect">
-                <button>HOME</button>
-                <button>PRODUCTS</button>
-                <button>CONTACT</button>
-                <button>BUY</button>
+                <button class="redirect-btn">HOME</button>
+                <button class="redirect-btn">PRODUCTS</button>
+                <button class="redirect-btn">CONTACT</button>
+                <button class="redirect-btn">BUY</button>
+                <button class="redirect-btn" id="profile-btn"><img src="resource/icon/profile-btn.png"></button>
             </div>
+            <h1>BAKERY SHOP</h1>
+            <div></div>
         </header>
         <main>
-            <h2>Welcome to the best bakery shop, with the best bread.</h2>
-            <div class="bread-grid">
-                <div class="bread">
-                    <div class="bread-img">
-                        <img src="resource/bread/bread-1.jpg">
-                    </div>
-                    <div class="bread-info">
-                        <p>bread type 1</p>
-                        <button>Buy</button>
-                    </div>
-                </div>
-                <div class="bread">
-                    <div class="bread-img">
-                        <img src="resource/bread/bread-2.jpg">
-                    </div>
-                    <div class="bread-info">
-                        <p>bread type 2</p>
-                        <button>Buy</button>
-                    </div>
-                </div>
-                <div class="bread">
-                    <div class="bread-img">
-                        <img src="resource/bread/bread-3.jpg">
-                    </div>
-                    <div class="bread-info">
-                        <p>bread type 3</p>
-                        <button>Buy</button>
-                    </div>
-                </div>
-                <div class="bread">
-                    <div class="bread-img">
-                        <img src="resource/bread/bread-4.jpg">
-                    </div>
-                    <div class="bread-info">
-                        <p>bread type 4</p>
-                        <button>Buy</button>
-                    </div>
-                </div>
-                <div class="bread">
-                    <div class="bread-img">
-                        <img src="resource/bread/bread-5.jpg">
-                    </div>
-                    <div class="bread-info">
-                        <p>bread type 5</p>
-                        <button>Buy</button>
-                    </div>
-                </div>
-                <div class="bread">
-                    <div class="bread-img">
-                        <img src="resource/bread/bread-6.jpg">
-                    </div>
-                    <div class="bread-info">
-                        <p>bread type 6</p>
-                        <button>Buy</button>
-                    </div>
-                </div>
+            <div class="offer">
+                <a id="offer-link">
+                    <img id="offer-img" class="entry-effect">
+                </a>
+                <p id="offer-name" class="text-example">This is a example</p>
             </div>
         </main>
     </body>

@@ -1,13 +1,5 @@
 body{
-    display: flex;
-    flex-direction: column;
     margin: 0;
-}
-
-header{
-    flex: 1;
-    margin: 0;
-    background-color: bisque;
 }
 
 html{
@@ -15,72 +7,140 @@ html{
 }
 
 h1{
-    padding: 10px 0;
+    font-size: 35px;
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
 }
 
 p,h1,h2{
     text-align: center;
 }
 
-button{
+.redirect-btn{
     flex: 1;
     padding: 10px 0;
     background-color: bisque;
     cursor: pointer;
+    font-weight: bold;
+    border: none;
 
-    transition: background-color 0.15s;
+    opacity: 0.9;
+
+    transition: background-color 0.15s, opacity 0.15s;
 }
 
-button:hover{
-    background-color: wheat;
+.redirect-btn:hover{
+    opacity: 1;
+}
+
+#profile-btn img{
+    height: 50px;
+}
+
+header{
+    height: 41vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-image: url("resource/background/bg1.jpg");
+    background-position: 15% 0%;
 }
 
 .redirect{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    justify-self: flex-start;
 }
 
-.bread-grid{
-    display: grid;
-    grid-template-columns: 200px 200px 200px;
-    column-gap: 15px;
-    row-gap: 15px;
-    justify-content: center;
-    padding: 50px 100px;
+.displacement{
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 1s;
 }
 
-.bread{
-    display: flex;
-    flex-direction: column;
-    border: 5px solid #e9b796;
-    border-radius: 15px;
+.show{
+    opacity: 1;
+    transform: translateX(0);
 }
 
-.bread-img > img{
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    object-fit: cover;
-    object-position: center;
-    display: block;
+.offer{
+    height: 50vh;
     width: 100%;
-    height: 120px;
+    background-color: black;
+    margin-top: 5vh;
 }
 
-.bread-info{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+#offer-img{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+
+    object-fit: contain;
+    cursor: pointer;
 }
 
-.bread-info > p{
-    display: inline-block;
-    padding: 0 5px;
+.text-example{
+    display:block;
+    position: relative;
+    top: -7rem;
+    color: white;
+
+    overflow: hidden;
+    font-size: 0;
+    font-style: italic;
+    font-weight: bold;
+
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+    z-index: 1;
+
+    opacity: 0;
+    transition: font-size 2.5s, opacity 1.5s;
 }
 
-.bread-info > button{
-    padding: 0;
-    height: 20px;
-    align-self: center;
-    margin: 0 15px;
+.text-entry{
+    opacity: 1;
+    font-size: 6vw;
+}
+
+.entry-effect{
+    animation: entry 1.5s linear 0s 1 normal both;
+}
+
+.leave-effect{
+    animation: leave 1.5s linear 0s 1 normal both;
+}
+
+@keyframes entry{
+    from{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes leave{
+    from{
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    to{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+@media (min-width: 670px){
+    .text-entry{
+        font-size: 30px;
+    }
 }
