@@ -1,0 +1,65 @@
+
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.task-list{
+  display:flex;
+  flex-direction: column;
+}
+
+.task-element{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
+
+.task-finish{
+  display: flex;
+  padding: 10px 10px;
+  text-align: left;
+}
+
+.task-element:hover{
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.hidden{
+  display: none;
+}
+
+.textfield{
+  display: flex;
+  justify-items: right;
+  justify-content: right;
+  padding: 5px 20px;
+}
+
+.loginMenu{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+#firebaseui-auth-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50vh;
+  width: 40vw;
+}
